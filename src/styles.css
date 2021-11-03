@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f1f3f6;
+  font-family: roboto;
+}
+.all {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.all .contents {
+  width: 95vw;
+  display: flex;
+}
+.all .contents .left {
+  background-color: white;
+  flex-grow: 1;
+  flex-basis: 235px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.all .contents .right {
+  background-color: white;
+  flex-grow: 6;
+}
+.all .contents .left .filters {
+  margin: 5px;
+  padding: 5px;
+}
+.all .contents .right .products {
+  margin: 5px;
+  padding: 5px;
+}
+
+/*Filter Css*/
+.all .contents .left .filters .filtersApplied {
+}
+.all .contents .left .filters .filtersApplied .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all .contents .left .filters .filtersApplied .filtersAction {
+  display: flex;
+  flex-wrap: wrap;
+}
+.all .contents .left .filters .filtersApplied .filtersAction .FilterAction {
+  cursor: pointer;
+  font-size: medium;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  font-size: 13px;
+  border-radius: 3px;
+  margin: 5px;
+  background-color: #e0e0e0;
+  max-width: 200px;
+  overflow: hidden;
+}
+.all
+  .contents
+  .left
+  .filters
+  .filtersApplied
+  .filtersAction
+  .FilterAction:hover {
+  background-color: #d7d7d7;
+}
+.all
+  .contents
+  .left
+  .filters
+  .filtersApplied
+  .filtersAction
+  .FilterAction:hover
+  .filterName {
+  text-decoration: line-through;
+}
+.all
+  .contents
+  .left
+  .filters
+  .filtersApplied
+  .filtersAction
+  .FilterAction
+  .cross {
+  margin-right: 5px;
+}
+
+.all .contents .left .filters section {
+  padding: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.all .contents .left .filters .filterCategories .CategoryHead {
+  display: flex;
+  justify-content: space-between;
+}
+.all .contents .left .filters .filterCategories .CategoryHead div {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.all .contents .left .filters .filterCategories .Categories {
+  display: none;
+  margin: 10px;
+  margin-left: -8px;
+}
+.all .contents .left .filters .filterCategories .Categories .Category {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+.all
+  .contents
+  .left
+  .filters
+  .filterCategories
+  .Categories
+  .Category
+  .CategoryName {
+  margin-left: 10px;
+}
+
+/*Products Css*/
+.all .contents .right .products {
+  margin-left: -5px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.all .contents .right .products .items {
+  border-bottom: 1px solid #f0f0f0;
+}
+.all .contents .right .products .items h2 {
+  margin-left: 15px;
+}
+.products .searchedProducts {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.products .searchedProducts .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+  flex-basis: 15%;
+  height: 30%;
+}
+.products .searchedProducts .product .productImage img {
+  width: 250px;
+  height: 200px;
+}
+.products .searchedProducts .product:hover {
+  box-shadow: 0 3px 16px 0 rgb(0 0 0 / 11%);
+}
+.products .searchedProducts .product .productContent {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.products .searchedProducts .product .productContent .Info .productInfo {
+  color: #878787;
+  font-size: 12px;
+  padding-bottom: 5px;
+  word-wrap: break-word;
+}
+.products .searchedProducts .product .productContent .Head .HeadName {
+  padding-bottom: 5px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+.products .searchedProducts .product .productContent .Rating .RatingPoint {
+  line-height: normal;
+  display: inline-block;
+  color: #fff;
+  padding: 2px 4px 2px 6px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  vertical-align: middle;
+  background-color: #388e3c;
+}
+.products .searchedProducts .product .productContent .Rating .RatingAmount {
+  padding-left: 8px;
+  font-weight: 500;
+  color: #878787;
+}
+
+.products .searchedProducts .product .productContent .price span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+}
